@@ -179,4 +179,807 @@
 </footer>
 
 </body>
-</html>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SHOPALA | Seu estilo começa aqui</title>
+
+<meta name="description" content="Shopala - Moda, estilo e qualidade.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #111;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #111;
+    color: white;
+    padding: 16px 20px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.cart {
+    background: white;
+    color: #111;
+    padding: 9px 13px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        linear-gradient(135deg, #222, #777);
+        
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero span {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 15px 0;
+    line-height: 1.05;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.button {
+    display: inline-block;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== BENEFITS ===== */
+
+.benefits {
+    background: white;
+    padding: 25px 15px;
+}
+
+.benefit-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.benefit {
+    padding: 15px;
+}
+
+.benefit-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.benefit h3 {
+    font-size: 15px;
+}
+
+.benefit p {
+    color: #777;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ===== SECTION ===== */
+
+section {
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+}
+
+.section-title p {
+    color: #777;
+    margin-top: 8px;
+}
+
+/* ===== PRODUCTS ===== */
+
+.products {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 260px;
+    background: linear-gradient(135deg, #eeeeee, #d5d5d5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 14px;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-category {
+    color: #888;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product h3 {
+    margin: 8px 0;
+}
+
+.price {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.buy-button {
+    display: block;
+    text-align: center;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* ===== PROMO ===== */
+
+.promo {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.promo h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.promo p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* ===== WHATSAPP ===== */
+
+.whatsapp {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 2000;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #25D366;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    font-size: 27px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #090909;
+    color: white;
+    padding: 45px 20px 25px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column a {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+.copyright {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 470px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product-image {
+        height: 210px;
+    }
+
+    .product-info {
+        padding: 13px;
+    }
+
+    .product h3 {
+        font-size: 15px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="header-content">
+
+<div class="logo">
+SHOPALA
+</div>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#produtos">Produtos</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<div class="cart">
+🛒 0
+</div>
+
+</div>
+
+</header>
+
+
+<!-- ===== HERO ===== -->
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<span>Bem-vindo à Shopala</span>
+
+<h1>
+Seu estilo começa aqui.
+</h1>
+
+<p>
+Moda, qualidade e estilo para você.
+</p>
+
+<a href="#produtos" class="button">
+VER PRODUTOS
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ===== BENEFITS ===== -->
+
+<div class="benefits">
+
+<div class="benefit-grid">
+
+<div class="benefit">
+
+<div class="benefit-icon">
+🚚
+</div>
+
+<h3>Envio seguro</h3>
+
+<p>
+Seu pedido preparado com cuidado.
+</p>
+
+</div>
+
+
+<div class="benefit">
+
+<div class="benefit-icon">
+🔒
+</div>
+
+<h3>Compra segura</h3>
+
+<p>
+Segurança em sua compra.
+</p>
+
+</div>
+
+
+<div class="benefit">
+
+<div class="benefit-icon">
+💬
+</div>
+
+<h3>Atendimento</h3>
+
+<p>
+Estamos aqui para ajudar.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ===== PRODUCTS ===== -->
+
+<section id="produtos">
+
+<div class="products">
+
+<div class="section-title">
+
+<h2>
+Produtos em destaque
+</h2>
+
+<p>
+Confira alguns dos nossos produtos.
+</p>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<!-- PRODUTO 1 -->
+
+<div class="product">
+
+<div class="product-image">
+FOTO DO PRODUTO
+</div>
+
+<div class="product-info">
+
+<span class="product-category">
+Camiseta
+</span>
+
+<h3>
+Camiseta Básica
+</h3>
+
+<div class="price">
+R$ 49,90
+</div>
+
+<a href="#" class="buy-button">
+Comprar
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUTO 2 -->
+
+<div class="product">
+
+<div class="product-image">
+FOTO DO PRODUTO
+</div>
+
+<div class="product-info">
+
+<span class="product-category">
+Camiseta
+</span>
+
+<h3>
+Camiseta Premium
+</h3>
+
+<div class="price">
+R$ 59,90
+</div>
+
+<a href="#" class="buy-button">
+Comprar
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUTO 3 -->
+
+<div class="product">
+
+<div class="product-image">
+FOTO DO PRODUTO
+</div>
+
+<div class="product-info">
+
+<span class="product-category">
+Acessórios
+</span>
+
+<h3>
+Pulseira Shopala
+</h3>
+
+<div class="price">
+R$ 19,90
+</div>
+
+<a href="#" class="buy-button">
+Comprar
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUTO 4 -->
+
+<div class="product">
+
+<div class="product-image">
+FOTO DO PRODUTO
+</div>
+
+<div class="product-info">
+
+<span class="product-category">
+Boné
+</span>
+
+<h3>
+Boné Shopala
+</h3>
+
+<div class="price">
+R$ 39,90
+</div>
+
+<a href="#" class="buy-button">
+Comprar
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===== PROMO ===== -->
+
+<section class="promo">
+
+<h2>
+Seu próximo look está aqui.
+</h2>
+
+<p>
+Descubra produtos selecionados pela Shopala.
+</p>
+
+<a href="#produtos" class="button">
+COMPRAR AGORA
+</a>
+
+</section>
+
+
+<!-- ===== SOBRE ===== -->
+
+<section id="sobre">
+
+<div class="section-title">
+
+<h2>
+Sobre a Shopala
+</h2>
+
+<p>
+Estilo simples. Qualidade. Confiança.
+</p>
+
+</div>
+
+<div style="max-width:700px;margin:auto;text-align:center;line-height:1.8;color:#555;">
+
+<p>
+A Shopala nasceu com o objetivo de oferecer produtos de moda
+com qualidade, estilo e preços acessíveis.
+</p>
+
+<br>
+
+<p>
+Nossa missão é proporcionar uma experiência simples,
+segura e agradável para nossos clientes.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+
+<footer id="contato">
+
+<div class="footer-content">
+
+<div class="footer-column">
+
+<h3>
+SHOPALA
+</h3>
+
+<p>
+Moda, estilo e qualidade.
+</p>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>
+Links
+</h3>
+
+<p>
+<a href="#inicio">Início</a>
+</p>
+
+<p>
+<a href="#produtos">Produtos</a>
+</p>
+
+<p>
+<a href="#sobre">Sobre nós</a>
+</p>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>
+Atendimento
+</h3>
+
+<p>
+WhatsApp
+</p>
+
+<p>
+Instagram
+</p>
+
+<p>
+Shopee
+</p>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Shopala. Todos os direitos reservados.
+
+</div>
+
+</footer>
+
+
+<!-- ===== WHATSAPP ===== -->
+
+<a
+class="whatsapp"
+href="https://wa.me/5500000000000"
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
+
+
+</body>
+    </html>
